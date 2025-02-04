@@ -2,7 +2,6 @@ export class NewsManager {
     constructor() {
         this.container = document.getElementById("entries");
         this.loadEntries();
-        this.setupSocketListeners();
     }
 
     async loadEntries() {
@@ -13,12 +12,6 @@ export class NewsManager {
         } catch (error) {
             console.error('Error loading entries:', error);
         }
-    }
-
-    setupSocketListeners() {
-        socket.on('newPost', (post) => {
-            this.addEntryToDisplay(post);
-        });
     }
 
     addEntryToDisplay(post) {

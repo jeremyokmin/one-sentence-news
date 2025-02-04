@@ -2,51 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONE SENTENCE NEWS</title>
-    <style>
-        body {
-            background-color: #00FF00;
-            color: #0000FF;
-            font-family: Comic Sans MS, cursive;
-            text-align: center;
-        }
-        h1 {
-            text-decoration: blink;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: #FFFF00;
-            padding: 10px;
-            border: 5px dashed red;
-            max-height: 400px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .entry {
-            border-bottom: 2px solid black;
-            padding: 5px;
-            position: relative;
-        }
-        .gunter {
-            width: 50px;
-            display: block;
-            margin: 10px auto;
-        }
-    </style>
-  <script type="module" crossorigin src="/one-sentence-news/assets/index-C0nXWMKf.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE SENTENCE NEWS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>ONE SENTENCE NEWS</h1>
-    <marquee>Check out my daily posts!!!</marquee>
-    <embed src="https://www.vgmusic.com/music/other/misc/piano/UnderConstruction.mid" autostart="true" loop="true" hidden="true">
-    <div class="container" id="entries">
-        <!-- Daily posts will be loaded here -->
-    </div>
-    <br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Under_construction.gif">
+    <h1>ONE SENTENCE NEWS</h1>
+    <marquee>Check out my daily posts!!!</marquee>
+    <embed src="https://www.vgmusic.com/music/other/misc/piano/UnderConstruction.mid" autostart="true" loop="true" hidden="true">
+    
+    <div class="container">
+        <div class="news-container">
+            <div class="news-entry">
+                <h2>Breaking News: JavaScript is Fun!</h2>
+                <p class="date">February 3, 2025</p>
+            </div>
+            <div class="news-entry">
+                <h2>New AI Breakthrough Achieved!</h2>
+                <p class="date">February 4, 2025</p>
+            </div>
+        </div>
+    </div>
 
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Under_construction.gif">
 </body>
 </html>
