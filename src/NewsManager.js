@@ -21,24 +21,6 @@ export class NewsManager {
         });
     }
 
-    async addEntry(text) {
-        if (text?.trim()) {
-            try {
-                const response = await fetch('/api/posts', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ text })
-                });
-                const post = await response.json();
-                this.addEntryToDisplay(post);
-            } catch (error) {
-                console.error('Error adding entry:', error);
-            }
-        }
-    }
-
     addEntryToDisplay(post) {
         const div = document.createElement('div');
         div.className = 'entry';
