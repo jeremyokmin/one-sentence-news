@@ -36,3 +36,8 @@ h1 {
     
     text-align: center;
 }
+.gunter-img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
