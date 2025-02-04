@@ -1,0 +1,5 @@
+Git status (check is there are files to be uploaded, they should be red or something) 
+Git add . (adds all the files to you commit) 
+git commit -m “enter any message” (commits with customer message) 
+git push (pushed everything) 
+after: make sure you go to GitHub and check it all got updated
