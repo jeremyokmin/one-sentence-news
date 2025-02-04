@@ -1,7 +1,7 @@
 body {
     background-color: #00FF00;
     color: #0000FF;
-    font-family: Comic Sans MS, cursive;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', 'Comic Relief', cursive;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1 {
     overflow-y: auto;
     display: flex;
     flex-direction: column-reverse;
-    line-height: 0.2;
+    line-height: .9;
 }
 
 .entry {
