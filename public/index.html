@@ -105,7 +105,6 @@
                 `;
                 this.container.prepend(div);
             }
-
             displayEntries(entries) {
                 this.container.innerHTML = entries
                     .map(entry => `
@@ -127,7 +126,7 @@
         const newsManager = new NewsManager();
 
         function addEntry() {
-            const text = prompt("Enter your new post:");
+            const text = prompt("Enter your news post:");
             newsManager.addEntry(text);
         }
     </script>
