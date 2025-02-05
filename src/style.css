@@ -13,31 +13,43 @@ h1 {
     width: 80%;
     margin: auto;
     background-color: #FFFF00;
-    
     border: 5px dashed red;
-    max-height: 400px;
-    overflow-y: auto;
+    /* max-height: 400px;  Remove if you don't want a max height */
+    /* overflow-y: auto; Remove if you don't want scrolling */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; /* Or column for normal order */
     line-height: .9;
+    gap: 20px; /* Space between news entries */
 }
 
-.entry {
-    border-bottom: 2px solid black;
-    padding: 5px;
-    position: relative;
-}
-
-/* Centered news entry */
 .news-entry {
-    position: relative;
+    position: relative; /* Key for positioning the icon */
     border-radius: 5px;
     margin: 10px auto;
-    
     text-align: center;
+    padding: 10px;
+    padding-bottom: 40px; /* Space for the icon */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
 }
+
+.news-content {
+    width: 100%;
+    /* Add margin/padding here if needed */
+}
+
 .gunter-img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.like-icon {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 10px; /* Position from the right edge */
 }
