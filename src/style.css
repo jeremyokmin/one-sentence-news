@@ -45,11 +45,8 @@ h1 {
     margin-bottom: 10px;
 }
 
-.like-icon {
-    width: 30px;
-    height: auto;
-    cursor: pointer;
-    position: absolute;
-    bottom: 5px;
-    right: 10px; /* Position from the right edge */
+.Macron-img {
+    width: 120pxpx;
+    height: 80px;
+    margin-bottom: 10px;
 }
